@@ -9,7 +9,7 @@
 ## Usage, install and forget
 
 ### Option 1 (fast)
-Run `wget https://raw.githubusercontent.com/basnijholt/ipynb_git_filters/master/ipynb_filter.py && echo "*.ipynb filter=ipynb_filter" >> .gitattributes && python ipynb_filter.py`
+Run `wget https://raw.githubusercontent.com/mandelkow/ipynb_git_filters/master/ipynb_filter.py && echo "*.ipynb filter=ipynb_filter" >> .gitattributes && python ipynb_filter.py`
 
 ### Option 2 (manual, slow)
 1. Copy `ipynb_filter.py` into your project root

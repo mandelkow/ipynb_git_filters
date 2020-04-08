@@ -15,6 +15,7 @@ from nbconvert.preprocessors import Preprocessor
 
 
 class RemoveMetadata(Preprocessor):
+    'Add options to the output of nbconver.preprocessors.Preprocessor.preprocess()!?'
     def preprocess(self, nb, resources):
         nb.metadata = {
             "language_info": {"name": "python", "pygments_lexer": "ipython3"}
@@ -23,7 +24,7 @@ class RemoveMetadata(Preprocessor):
 
 
 if __name__ == "__main__":
-    # The filter is getting activated
+    # Add filter command (jupyter nbconvert...) to git config
     import os
 
     git_cmd = 'git config filter.ipynb_filter.clean "jupyter nbconvert --to notebook --config ipynb_filter.py --stdin --stdout"'
